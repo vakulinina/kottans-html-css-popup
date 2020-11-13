@@ -76,11 +76,13 @@ a:visited {
   color: #757575;
 }
 
+/* App-menu */
+
 .app-menu {
   display: none;
 }
 
-.app-menu a {
+.app-menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -93,18 +95,18 @@ a:visited {
   border-radius: 4px;
 }
 
-.app-menu a img {
+.app-menu .menu-item img {
   max-width: 90%;
   max-height: 60%;
 }
 
-.app-menu a:focus {
+.app-menu .menu-item:focus {
   border-color: rgba(224, 224, 224, 0.7);
   background-color: transparent;
   outline: none;
 }
 
-.app-menu a:hover {
+.app-menu .menu-item:hover {
   background-color: rgba(224, 224, 224, 0.7);
 }
 
@@ -132,7 +134,7 @@ a:visited {
   line-height: 2.5em;
 }
 
-.app-menu a:nth-child(n + 13),
+.app-menu .menu-item:nth-child(n + 13),
 .app-menu .div-line {
   display: none;
 }
